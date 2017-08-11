@@ -8,4 +8,6 @@ RUN mkdir /app/outdir/
 
 COPY . /app
 
-#No entrypoint - invoke required utility directly
+#Whatever we do, we need to run python
+ENTRYPOINT ["python"]
+
